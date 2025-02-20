@@ -25,7 +25,13 @@ html{
         justify-content: ;
     
     }
-    
+    #bar-icon{
+        display: none;
+        width: 7%;
+        height: 50px;
+        text-align: start;
+        align-items: center;
+    }
     
     .nav-itmes{
         font-size: 17px;
@@ -77,132 +83,69 @@ html{
             width: 150px; 
             align-items: center;
         } 
-    
-        /* .navbar{
-           width: 100%;
-           height: 80px;
-           background-color:white;
-           border: 1px solid black;
-           margin-top: 5px;
-           m-top: 0;
-           box-shadow: 5px;
-        } 
-        
-        .img-1{
-            height:80px;
-            width: 180px;
-            margin-left: 40px;
-            padding-bottom: 20px;
-            background: transparent;
-
-        }
-        .nav-links{
-            display: flex;
-            margin-right: 80px;
-            width: 480px;
-            
-        }
-        li{
-            display: flex;
-            list-style: none;
-            border-left: 1px solid rgb(104, 104, 104) ;
-            border-right:1px solid rgb(104, 104, 104);
-            width:110px;
-            height: 70px;
-            color: black;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        }
-        li:hover{
-            background-color: yellow;
-        }
-        a{
-           text-decoration: none; 
-        }
-
-        .nav-btn{
-            display: flex;
-            background-color: purple;
-            color: yellow;
-            font-weight: bold;
-            height: 70px;
-            width: 200px; 
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        }
-        
-       */
-
-         /* .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            padding: 10px 20px; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        .carousel-img{
+            height: 500px;
             width: 100%;
-            height: 90px;
-            background-color: aqua;
         }
-        .logo {
-            display: flex;
-            align-items: center;
+        .card-img{
+            z-index: 2;
+            opacity: 0.4;
+            height:200px ;
         }
-           .logo img {
-            height:110px;
-            width: 230px;
-            margin-right: 0px;
+        .card-img:hover{
+            opacity: 0.9;
+        }
+        .card-1{
+            width: 280px;
+            margin-top: 30px; 
+            border: 1px solid transparent;
             text-align: center;
-            background-color: transparent;
-        } 
-        .img-1{
-            height:100px;
-            width: 230px;
-            margin-right: 0px;
-            text-align: center;
-            align-items: center;
-            background-color: transparent; 
         }
-        .nav-links {
-            display: flex;
-            list-style: none;
+        .card-h3{
+            font-size: 20px;
+            color:purple ;
         }
-        .nav-links li {
-            margin: 0 15px;
+        .main-card{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin: 10px;
+            margin-bottom: 40px;
+            justify-content: center;
         }
-        .nav-links a {
-            text-decoration: none;
-            color: black;
-            font-size: 16px;
-        }
-        .search-box {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .search-box input {
-            border: none;
-            outline: none;
-        }
-        .nav-btn{
+
+        .bank-wye{
             background-color: purple;
-            color: yellow;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
+            color: white;
+            text-align: center;
         }
-        .menu-toggle {
-            display: none;
-            font-size: 24px;
-            cursor: pointer;
-        }  */
+        .bank-wye{
+            padding-top: 40px;
+            font-size: 21px;
+            padding-bottom: 50px;
+        }
+         
+       @media(max-width: 900px){
+
+          .main-card{
+            grid-template-columns: repeat(2,1fr);
+            margin-bottom: 40px;
+            text-align: center;
+          }
+       }  
+       @media(max-width: 768px){
+
+        .main-card{
+          grid-template-columns: repeat(1,1fr);
+          margin-bottom: 40px;
+          justify-content: center;
+          margin-left: 70px;
+        }
+     }  
+
+
+
         @media (max-width: 768px) {
-            .nav-links {
+            .nav-itmes{
                 display: none;
                 flex-direction: column;
                 position: absolute;
@@ -213,13 +156,13 @@ html{
                 box-shadow: 0 2px 5px rgba(0,0,0,0.1);
                 text-align: center;
             }
-            .nav-links.active {
-                display: flex;
+            .login-button {
+                display: none;
             }
-            .nav-links li {
-                margin: 10px 0;
+            .search-box {
+                display: none;
             }
-            .menu-toggle {
+            #bar-icon{
                 display: block;
             }
         }
