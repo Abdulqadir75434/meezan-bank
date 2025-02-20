@@ -169,6 +169,11 @@ html{
             height: 200px;
             text-align: center;
         }
+        .ServicesDesk{
+            background-color: white;
+            height: 200px;
+            text-align: center;
+        }
        @media(max-width: 900px){
 
           .main-card{
