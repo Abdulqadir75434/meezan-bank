@@ -116,14 +116,46 @@ html{
         .bank-wye{
             background-color: purple;
             color: white;
-            text-align: center;
+            
+        }
+        .bank-card{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            margin-top: 40px;
         }
         .bank-wye{
             padding-top: 40px;
             font-size: 21px;
             padding-bottom: 50px;
+            text-align: center;
         }
-         
+        .bank-card1{
+            border:1px solid transparent ;
+            width: 200px;
+            height: 250px;
+        }
+        #bankicon1{
+            background-color: transparent;
+            color: white;
+            font-size: 80px;
+            border: 1px solid transparent;
+            width:160px;
+            padding-top: 15px;
+            height: 130px;
+            border-radius: 50%;
+            background-color: rgb(149, 96, 152);
+        }
+        #bankicon1:hover{
+            background-color: #ffd900;
+        }
+         .bank-p{
+             font-size: 15px;
+             padding-top: 10px;
+         }
+         .bankh3{
+            font-size: 20px;
+            padding-top: 8px;
+         }
        @media(max-width: 900px){
 
           .main-card{
@@ -131,6 +163,11 @@ html{
             margin-bottom: 40px;
             text-align: center;
           }
+          .bank-card{
+            grid-template-columns: repeat(3,1fr);
+            margin-bottom: 40px;
+          }
+
        }  
        @media(max-width: 768px){
 
@@ -140,6 +177,10 @@ html{
           justify-content: center;
           margin-left: 70px;
         }
+        .bank-card{
+            grid-template-columns: repeat(2,1fr);
+            margin-bottom: 40px;
+          }
      }  
 
 
