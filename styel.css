@@ -156,6 +156,19 @@ html{
             font-size: 20px;
             padding-top: 8px;
          }
+
+         .bank-h2{
+            padding-top: 40px;
+            font-size: 21px;
+            padding-bottom: 30px;
+            text-align: center;
+            color: purple;
+        }
+        .Awards-img{
+            background-color: #ece7e7;
+            height: 200px;
+            text-align: center;
+        }
        @media(max-width: 900px){
 
           .main-card{
