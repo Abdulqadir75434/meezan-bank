@@ -193,6 +193,15 @@ html{
             border-right:1px solid white;
             height: 70px;          
         }
+
+        .footer-h3{
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .media-p-1{
+            font-size: 12px;
+            font-weight: 500;
+        }
        @media(max-width: 900px){
 
           .main-card{
